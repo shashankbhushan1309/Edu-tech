@@ -1,0 +1,126 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    color: #333;
+}
+
+.header, .footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Card Style */
+.card {
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.card h2 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* Input and Button Styling */
+input, button {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 10px auto;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card, .leaderboard-item {
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 15px;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover, .leaderboard-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Progress Bar */
+.progress-bar {
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.progress-bar div {
+    height: 100%;
+    background-color: #4CAF50;
+    text-align: right;
+    padding-right: 10px;
+    color: white;
+    line-height: 20px;
+}
+
+/* Submit Section */
+.submit-section {
+    margin-top: 10px;
+}
+
+.submit-section input {
+    width: calc(100% - 110px);
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.submit-section button {
+    width: 100px;
+    display: inline-block;
+}
+
+/* Hidden Section */
+.hidden {
+    display: none;
+}
+
+/* Footer */
+.footer {
+    font-size: 0.9rem;
+    color: #ddd;
+}

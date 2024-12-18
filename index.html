@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edu-Tech Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Edu-Tech Platform</h1>
+    </header>
+    <main class="container">
+        <!-- Login Section -->
+        <section id="login-section" class="card">
+            <h2><i class="fas fa-user-circle"></i> Login</h2>
+            <input type="text" id="candidateId" placeholder="Enter Candidate ID" aria-label="Candidate ID">
+            <button onclick="login()">Login</button>
+        </section>
+
+        <!-- Available Projects -->
+        <section id="available-projects" class="hidden card">
+            <h2><i class="fas fa-folder-open"></i> Available Projects</h2>
+            <div id="projects-list" class="grid"></div>
+        </section>
+
+        <!-- Assigned Projects -->
+        <section id="assigned-projects" class="hidden card">
+            <h2><i class="fas fa-tasks"></i> Your Assigned Projects</h2>
+            <div id="assigned-projects-list" class="grid"></div>
+        </section>
+
+        <!-- Leaderboard -->
+        <section id="leaderboard" class="hidden card">
+            <h2><i class="fas fa-chart-line"></i> Leaderboard</h2>
+            <div id="leaderboard-list" class="grid"></div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Shashank Bhushan - s.bhushan910@gmail.com</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
